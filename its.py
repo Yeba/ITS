@@ -22,4 +22,4 @@ def t2ps_its(T: np.ndarray, h: int):
             a += e
     return vec
 
-def ITS(T1: np.ndarray, T2: np.ndarray, h):return np.linalg.norm(t2ps_its(T1, h), t2ps_its(T2, h)) / np.sqrt(h)
+def ITS(T1: np.ndarray, T2: np.ndarray, h):return np.linalg.norm(t2ps_its(T1, h)- t2ps_its(T2, h)) / np.sqrt(h)
